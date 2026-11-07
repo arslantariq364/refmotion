@@ -1,0 +1,33 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node dependencies (frontend/dist is tracked for instant out-of-the-box serving)
+frontend/node_modules/
+node_modules/
+
+# Local runtime databases & user project storage
+storage/database/
+storage/unico.db*
+storage/temporary/
+storage/logs/
+storage/customer_projects/
+storage/generated_content/
+storage/exports/
+
+# Local ONNX voice models & downloaded reference videos (populated via onboarding or scripts/)
+storage/models/
+storage/reference_library/*
+!storage/reference_library/*/
+storage/reference_library/*/*
+!storage/reference_library/*/.gitkeep
+
+# OS & Editor files
+.DS_Store
+*.swp
+.env
